@@ -7,3 +7,67 @@
 body {
     background-color: black;
 }
+
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header div span {
+    background-color: grey;
+    color: white;
+    padding: 0.3%;
+    border: 0.1% solid grey;
+    border-radius: 5px;
+    margin: 0.3%;
+}
+
+header div span:last-of-type i {
+    transform: rotate(0.125turn);
+}
+
+main section {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 3% 6% 1.5% 8%;
+}
+
+main section figure {
+    position: relative;
+    width: 147px;
+    height: 87px;
+    background-image: url("https://i.picsum.photos/id/544/147/87.jpg?hmac=n4XzwOcd1O8tJh1Y8Wr_zojrF5c1tWypqDOmRDhuZKI");
+    margin: 0 0 1% 0.5%;
+}
+
+main section figure figcaption {
+    position: absolute;
+    top: 78%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 11px;
+    padding: 2.5%;
+    border: 0.1% solid grey;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: darkgrey;
+}
+
+footer section div {
+    display: inline-block;
+}
+
+.sectionleft {
+}
+
+.sectioncenter {
+}
+
+.sectionright {
+    background-color: brown;
+}
