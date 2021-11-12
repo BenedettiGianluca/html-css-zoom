@@ -15,59 +15,120 @@ header div {
 }
 
 header div span {
-    background-color: grey;
-    color: white;
+    background-color: #4a4a4a;
+    color: #fffff4;
     padding: 0.3%;
-    border: 0.1% solid grey;
+    border: 0.1% solid #4a4a4a;
     border-radius: 5px;
     margin: 0.3%;
 }
 
-header div span:last-of-type i {
+header div .fa-arrows-alt {
     transform: rotate(0.125turn);
 }
 
 main section {
     display: flex;
     flex-flow: row wrap;
-    margin: 3% 6% 1.5% 8%;
+    margin: 3% 3% 1.2% 5%;
 }
 
 main section figure {
     position: relative;
-    width: 147px;
-    height: 87px;
-    background-image: url("https://i.picsum.photos/id/544/147/87.jpg?hmac=n4XzwOcd1O8tJh1Y8Wr_zojrF5c1tWypqDOmRDhuZKI");
-    margin: 0 0 1% 0.5%;
+    width: 154px;
+    height: 102px;
+    background-image: url("https://picsum.photos/102/154");
+    background-size: cover;
+    margin: 0 0 0.8% 0.35%;
 }
 
 main section figure figcaption {
     position: absolute;
-    top: 78%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    top: 80%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fffff4;
     font-size: 11px;
     padding: 2.5%;
-    border: 0.1% solid grey;
+    border: 0.1% solid rgba(0, 0, 0, 0.3);
 }
 
 footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: darkgrey;
+}
+
+footer .sectionleft div {
+    padding: 4% 0 1.5% 2%;
 }
 
 footer section div {
     display: inline-block;
+    color: #fffff4;
+    padding: 1.5% 0 1.5% 2%;
 }
 
-.sectionleft {
+footer section div i {
+    font-size: 20px;
+    padding-left: 25%;
 }
 
-.sectioncenter {
+footer .sectionleft div span, footer .sectioncenter div span {
+    display: block;
+    font-size: 11px;
+    padding-top: 10%;
 }
 
-.sectionright {
-    background-color: brown;
+footer section div .fa-angle-up {
+    font-size: 10px;
+    vertical-align: top;
+}
+
+footer .sectionleft {
+    flex-grow: 1;
+    background-color: #222222;
+}
+
+footer .sectioncenter {
+    flex-grow: 1.4;
+    background-color: #222222;
+}
+
+footer .sectioncenter div .fa-user-plus {
+    padding-left: 5%;
+}
+
+footer .sectioncenter div .fa-user-friends {
+    padding-left: 35%;
+}
+
+footer .sectioncenter div .fa-share-square {
+    padding-left: 35%;
+    color: #4bc800;
+}
+
+footer .sectioncenter div .fa-comment {
+    padding-left: 5%;
+}
+
+footer .sectioncenter div .fa-record-vinyl {
+    padding-left: 20%;
+}
+
+footer .sectioncenter div .fa-th-large {
+    padding-left: 35%;
+}
+
+footer .sectioncenter div .fa-ellipsis-h {
+    padding-left: 5%;
+}
+
+footer .sectionright {
+    flex-grow: 0.1;
+    background-color: #4a4a4a;
+}
+
+footer .sectionright div {
+    padding: 23% 12%;
+    color: #e20000;
 }
